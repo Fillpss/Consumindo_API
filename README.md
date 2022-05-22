@@ -7,8 +7,8 @@ Criar um api
 - [x] Instalar as dependências "npm i express nodemon cors axios"
 - [x] Criar uma rota para acessar a API
 - [x] Servir a API
-- [] Habilitar o CORS
-- [] Habilitar o nodemon para reiniciar o server
+- [x] Habilitar o CORS
+- [x] Habilitar o nodemon para reiniciar o server
 
     ## Dependências:
         - expxress (ajudar a criar a API)
@@ -19,9 +19,9 @@ Criar um api
 ## frontend
 Consumir API
 
-- [] Utilizar fetch para consumir nossa API backend
-- [] Explicar Promise - Async/await
-- [] Usar try/catch
+- [x] Utilizar fetch para consumir nossa API backend
+- [x] Entender Promise - Async/await
+- [x] Usar try/catch
 - [] Mostrar a resposta na tela
 
 ## backend
