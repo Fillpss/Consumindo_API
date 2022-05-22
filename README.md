@@ -22,12 +22,12 @@ Consumir API
 - [x] Utilizar fetch para consumir nossa API backend
 - [x] Entender Promise - Async/await
 - [x] Usar try/catch
-- [] Mostrar a resposta na tela
+- [x] Mostrar a resposta na tela
 
 ## backend
 Consumir API
 
-- [] jsonplaceholder
-- [] Usar axios
-- [] Semelhanças entre axios e fetch
-- [] Usar try/catch
+- [x] jsonplaceholder (https://jsonplaceholder.typicode.com/users)
+- [x] Usar axios
+- [x] Semelhanças entre axios e fetch
+- [x] Usar try/catch

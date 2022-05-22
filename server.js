@@ -7,16 +7,27 @@ const express = require('express');
 // Iniciando a variável express criada anteriormente
 const app = express();
 
+// Um "fatch" porém para o back
+const axios = require('axios');
+const { acceptsEncodings } = require('express/lib/request');
+
 // Utilizando o cors na aplicação
 app.use(cors());
 
 // Criado a rota básica
-app.get('/', (req, res) => {
-    // Retornando em formato de JSON uma mensagem
-    return res.json([
-        { name: 'Filipe'},
-        { name: "Pedro"}
-    ]);
+app.get('/', async(req, res) => {
+
+    try {
+    // Response é a resposta do axios MAS eu tiro o datade dentro do response
+    const { data } = await axios("https://jsonplaceholder.typicode.com/users");
+    console.log(data )
+    // o axios ja possui um "const data = await response.json()" embutido";
+
+    return res.json(data);
+    } catch (error) {
+        console(error);
+    }
+
 });
 
 // Porta que será "Ouvida"
